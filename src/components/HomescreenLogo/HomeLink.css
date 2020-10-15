@@ -1,0 +1,15 @@
+.linkContainer {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+}
+
+.logoLink {
+    height: 40px;
+    transition: 0.4s;
+}
+
+.logoLink:hover {
+    height: 45px;
+    transition: 0.4s;
+}

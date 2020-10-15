@@ -1,0 +1,108 @@
+.navHidden {
+    display: none;
+}
+
+.navContainer {
+    opacity: 1;
+    position: fixed;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDFE2;
+    animation: navFadeIn 0.4s 0s normal forwards;
+    animation-timing-function: ease;
+    transition: navFadeIn;
+  }
+  
+  .navList {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 24px;
+    width: 65vw;
+    height: 45vh;
+    list-style-type: none;
+  }
+  
+  .navItems {
+    margin: 0;
+    padding: 4px;
+    width: 70%;
+    height: 20%;
+    font-family: 'Cardo', serif;
+  }
+  
+  .navLinks {
+    font-size: 170%;
+    text-decoration: none;
+    color: #101010;
+    transition: 0.2s;
+  }
+  
+  .navLinks::before {
+    position: absolute;
+    left: 15.5%;
+    height: 20px;
+    width: 20px;
+    content: '';
+    background-image: url('../../imgs/LunasCircleLogoSmall.png');
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .3s;
+  }
+  
+  a:hover::before {
+    opacity: 1;
+    transform: translateY(8px);
+  }
+  
+  
+  .linkLogo {
+    position: relative;
+    height: 40px;
+  }
+
+  /* === ANIMATIONS === */
+
+  @keyframes navFadeIn {
+      0% {
+          transform: translateY(100%);
+      }
+      
+      1% {
+        visibility: hidden;
+          transform: translateY(10%);
+          opacity: 0;
+      }
+
+      100% {
+        visibility: visible;
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  
+  /* ============================================= MOBILE STYLES ============================================= */
+  
+  @media screen and (min-width: 320px) and (max-width: 667px) {
+  
+      /* === MOBILE NAVIGATION === */
+  
+    .navList {
+      width: 75vw;
+    }
+  
+    .navItems {
+      width: 80%
+    }
+  
+    .navLinks::before {
+      left: 7%;
+    }
+  }
