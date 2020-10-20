@@ -32,10 +32,10 @@
     padding: 4px;
     width: 70%;
     height: 20%;
-    font-family: 'Cardo', serif;
   }
   
   .navLinks {
+    font-family: 'Cardo', serif;
     font-size: 170%;
     text-decoration: none;
     color: #101010;

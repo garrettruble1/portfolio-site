@@ -1,0 +1,344 @@
+.headerContainer {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+    padding-top: 40px;
+    transition: 0.4s;
+}
+
+.headerContainerSmall {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 100vw;
+    transition: 0.4s;
+}
+
+.headerTitle {
+    font-family: 'Raleway', serif;
+    font-size: 300%;
+    font-weight: 600;
+    animation: headerTitleGrow;
+    animation-duration: 0.4s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transition: headerTitleGrow;
+}
+
+@keyframes headerTitleShrink{
+
+    0% {
+        font-size: 300%;
+    }
+
+    100% {
+        font-size: 200%;
+    }
+}
+
+@keyframes headerTitleGrow {
+
+    0% {
+        font-size: 200%;
+    }
+
+    100% {
+        font-size: 300%;
+    }
+}
+
+.headerTitleSmall {
+    font-family: 'Raleway', serif;
+    font-size: 200%;
+    font-weight: 600;
+    animation: headerTitleShrink;
+    animation-duration: 0.4s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transition: headerTitleShrink;
+}
+
+.headerDecoration {
+    margin: 32px;
+    height: 12px;
+    width: 12px;
+    background-image: url(../../imgs/LunasStarBlack.png);
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.headerDecorationSmall {
+    margin: 24px;
+    height: 8px;
+    width: 8px;
+    background-image: url(../../imgs/LunasStarBlack.png);
+    background-size: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.headerLines {
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: #101010;
+    animation: headerLinesGrow;
+    animation-duration: 0.4s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transition: headerLinesGrow;
+}
+
+@keyframes headerLinesShrink {
+
+    0% {
+        width: 300px;
+    }
+
+    100% {
+        width: 150px;
+    }
+}
+
+@keyframes headerLinesGrow {
+
+    0% {
+        width: 150px;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
+
+.headerLinesSmall {
+    display: block;
+    height: 1px;
+    width: 150px;
+    background-color: #101010;
+    animation: headerLinesShrink;
+    animation-duration: 0.4s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transition: headerLinesShrink;
+}
+
+/* ================================================= TABLET STYLES ================================================= */
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+    .headerTitle {
+        font-family: 'Raleway', serif;
+        font-size: 200%;
+        font-weight: 600;
+    }
+
+    @keyframes headerTitleShrink{
+
+        0% {
+            font-size: 200%;
+        }
+    
+        100% {
+            font-size: 160%;
+        }
+    }
+    
+    @keyframes headerTitleGrow {
+    
+        0% {
+            font-size: 160%;
+        }
+    
+        100% {
+            font-size: 200%;
+        }
+    }
+    
+    .headerTitleSmall {
+        font-family: 'Raleway', serif;
+        font-size: 160%;
+        font-weight: 600;
+        animation: headerTitleShrink;
+        animation-duration: 0.4s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition: headerTitleShrink;
+    }
+    
+    .headerDecoration {
+        margin: 32px;
+        height: 12px;
+        width: 12px;
+        background-image: url(../../imgs/LunasStarBlack.png);
+        background-size: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.4s;
+    }
+
+    .headerDecorationSmall {
+        margin: 20px;
+        height: 8px;
+        width: 8px;
+        background-image: url(../../imgs/LunasStarBlack.png);
+        background-size: 8px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.4s;
+    }
+    
+    .headerLines {
+        display: block;
+        height: 1px;
+        width: 120px;
+        background-color: #101010;
+        transition: 0.4s;
+    }
+
+    .headerLinesSmall {
+        display: block;
+        height: 1px;
+        width: 72px;
+        background-color: #101010;
+        transition: 0.4s;
+    }
+
+}
+
+/* ================================================= MOBILE STYLES ================================================= */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .headerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 100vw;
+        transition: 0.4s;
+    }
+
+    .headerContainerSmall {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 72px;
+        width: 100vw;
+        transition: 0.4s;
+    }
+
+    .headerTitle {
+        font-family: 'Raleway', serif;
+        font-size: 250%;
+        font-weight: 500;
+    }
+
+    @keyframes headerTitleShrink{
+
+        0% {
+            font-size: 250%;
+        }
+    
+        100% {
+            font-size: 160%;
+        }
+    }
+    
+    @keyframes headerTitleGrow {
+    
+        0% {
+            font-size: 160%;
+        }
+    
+        100% {
+            font-size: 250%;
+        }
+    }
+    
+    .headerTitleSmall {
+        font-family: 'Raleway', serif;
+        font-size: 160%;
+        font-weight: 500;
+        animation: headerTitleShrink;
+        animation-duration: 0.4s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition: headerTitleShrink;
+    }
+
+    .headerDecoration {
+        margin: 12px;
+        height: 8px;
+        width: 8px;
+        background-image: url(../../imgs/LunasStarBlack.png);
+        background-size: 8px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.4s;
+    }
+
+    .headerDecorationSmall {
+        margin: 8px;
+        transition: 0.4s;
+    }
+
+    .headerLines {
+        display: block;
+        height: 1px;
+        width: 80px;
+        background-color: #101010;
+        animation: headerLinesGrow;
+        animation-duration: 0.4s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition: headerLinesGrow;
+    }
+
+    @keyframes headerLinesShrink {
+
+        0% {
+            width: 80px;
+        }
+    
+        100% {
+            width: 0px;
+        }
+    }
+
+    @keyframes headerLinesGrow {
+
+        0% {
+            width: 0px;
+        }
+    
+        100% {
+            width: 80px;
+        }
+    }
+
+    .headerLinesSmall {
+        display: block;
+        height: 1px;
+        width: 0px;
+        background-color: #101010;
+        animation: headerLinesShrink;
+        animation-duration: 0.4s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition: headerLinesShrink;
+    }
+
+}
