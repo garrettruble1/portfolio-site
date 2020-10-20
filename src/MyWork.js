@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from '../src/imgs/LunasCircleLogo.png';
 import { withRouter } from 'react-router-dom';
+import Header from './components/header/Header.js';
 
 function MyWork () {
     return(
-        <div className='placeholderLayout'>
-            <img src={ Logo } alt="Lunas Logo" className='logoPlaceholder' />
+        <div className='sampleContainer'>
+            <Header pageTitle='My Work' />
         </div>
     )
 }
