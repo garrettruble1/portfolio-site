@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import Header from './components/header/Header.js';
+import Header from '../../components/header/Header.js';
 
 function Contact () {
     return(

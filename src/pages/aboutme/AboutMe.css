@@ -1,0 +1,92 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 95%;
+    padding: 220px 0px 80px;
+    /* border: 1px dotted black; */
+}
+
+.pictureFrame {
+    opacity: 0;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: grey;
+}
+
+.selfie {
+    width: 100%;
+}
+
+.introTextRow {
+    opacity: 0;
+    grid-column-start: 8;
+    grid-column-end: 16;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.introText {
+    font-family: 'Cardo', serif;
+    font-size: 350%;
+}
+
+.elevatorText {
+    opacity: 0;
+    grid-column-start: 3;
+    grid-column-end: 16;
+    margin-top: 64px;
+    font-size: 150%;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+
+.contentFadeIn {
+    z-index: -1;
+    animation-name: contentFadeIn;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contentFadeIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ================================================= MOBILE STYLES ================================================= */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 200px 20px 20px 20px;
+    }
+    
+    .pictureFrame {
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: grey;
+    }
+    
+    .selfie {
+        height: 200px;
+        width: 200px;
+    }
+
+}
