@@ -28,7 +28,30 @@
     border-radius: 3px;
     display: flex;
     align-items: center;
-    color: black;
+    background-color: #101010;
+    color: #101010;
+    animation-name: linkElementAnimateReverse;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes linkElementAnimateReverse {
+
+    0% {
+        height: 28px;
+        width: 140px;
+    }
+
+    20% {
+        height: 28px;
+        width: 140px;
+    }
+
+    100% {
+        height: 24px;
+        width: 24px;
+    }
 }
 
 @keyframes linkElementAnimate {
@@ -36,19 +59,16 @@
     0% {
         height: 24px;
         width: 24px;
-        background-color: transparent;
     }
 
     80% {
         height: 28px;
         width: 140px;
-        background-color: black;
     }
 
     100% {
         height: 28px;
         width: 140px;
-        background-color: black;
     }
 }
 
@@ -60,9 +80,11 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
-    background-color: black;
-    color: black;
-    animation: linkElementAnimate 0.4s forwards;
+    background-color: #101010;
+    color: #101010;
+    animation-name: linkElementAnimate;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
     animation-timing-function: ease;
 }
 
@@ -95,7 +117,33 @@
 }
 
 .iconText {
+    position: absolute;
+    top: 7px;
+    left: 32px;
     opacity: 0;
+    font-size: 75%;
+    font-weight: 100;
+    color: #DDDFE2;
+    animation-name: iconTextAnimateReverse;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes iconTextAnimateReverse {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes iconTextAnimate {
@@ -104,7 +152,7 @@
         opacity: 0;
     }
 
-    40% {
+    50% {
         opacity: 0;
     }
 
@@ -119,7 +167,7 @@
     opacity: 1;
     font-size: 75%;
     font-weight: 100;
-    color: white;
+    color: #DDDFE2;
     animation-name: iconTextAnimate;
     animation-duration: 0.4s;
     animation-timing-function: ease;
@@ -152,7 +200,30 @@
     border-radius: 24px;
     display: flex;
     align-items: center;
-    color: black;
+    background-color: #101010;
+    color: #101010;
+    animation-name: linkElementAnimateCircleReverse;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes linkElementAnimateCircleReverse {
+
+    0% {
+        height: 28px;
+        width: 128px;
+    }
+
+    20% {
+        height: 28px;
+        width: 128px;
+    }
+
+    100% {
+        height: 24px;
+        width: 24px;
+    }
 }
 
 @keyframes linkElementAnimateCircle {
@@ -160,19 +231,16 @@
     0% {
         height: 24px;
         width: 24px;
-        background-color: transparent;
     }
 
     80% {
         height: 28px;
         width: 128px;
-        background-color: black;
     }
 
     100% {
         height: 28px;
         width: 128px;
-        background-color: black;
     }
 }
 
@@ -184,9 +252,11 @@
     border-radius: 28px;
     display: flex;
     align-items: center;
-    background-color: black;
-    color: black;
-    animation: linkElementAnimateCircle 0.4s forwards;
+    background-color: #101010;
+    color: #101010;
+    animation-name: linkElementAnimateCircle;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
     animation-timing-function: ease;
 }
 
@@ -217,8 +287,9 @@
     transition: 0.3s;
 }
 
+  /* ============================================= MOBILE STYLES ============================================= */
 
-@media screen and (max-width: 667px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
     .copyrightElement {
         padding: 4px;
         display: flex;
@@ -227,15 +298,75 @@
         font-size: 75%;
     }
 
-    .iconElement {
-        padding: 4px;
-        display: flex;
-        align-items: center;
-    }
-
     .footerLogo {
         padding: 0px 4px;
         width: 36px;
+    }
+
+    .linkElement {
+        position: relative;
+        margin: 0px 4px;
+        height: 20px;
+        width: 20px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        background-color: #101010;
+        color: #101010;
+    }
+
+    @keyframes linkElementAnimateReverse {
+
+        0% {
+            height: 28px;
+            width: 140px;
+        }
+    
+        20% {
+            height: 28px;
+            width: 140px;
+        }
+    
+        100% {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    @keyframes linkElementAnimateCircleReverse {
+
+        0% {
+            height: 28px;
+            width: 128px;
+        }
+    
+        20% {
+            height: 28px;
+            width: 128px;
+        }
+    
+        100% {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .linkElementCircle {
+        position: relative;
+        margin: 0px 4px;
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        background-color: #101010;
+        color: #101010;
+    }
+
+    .linkTag {
+        display: flex;
+        height: 20px;
+        width: 20px;
     }
 
     .footerIcons {
@@ -248,5 +379,22 @@
         position: absolute;
         height: 20px;
         width: 20px;
+    }
+
+    .footerIconsCircle {
+        background-color: #DDDFE2;
+        background-image: url('../../imgs/githubIcon.png');
+        background-size: 20px 20px;
+        background-position: center;
+        background-attachment: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+    }
+
+    .iconText {
+        display: none;
     }
 }

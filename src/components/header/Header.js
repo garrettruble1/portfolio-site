@@ -18,14 +18,14 @@ class Header extends React.Component {
      }
    
     componentWillUnmount(){
-         window.removeEventListener('scroll', () => this.getWindowHeight());
+         window.removeEventListener('scroll',() => this.getWindowHeight());
      }
 
     getWindowHeight = () => {
 
         const distanceY = window.pageYOffset ||
           document.documentElement.scrollTop
-        const shrinkOn = 200;
+        const shrinkOn = 50;
     
         if (distanceY > shrinkOn) {
           this.setState({
@@ -49,7 +49,7 @@ class Header extends React.Component {
             <header className={this.state.headerClass}>
                 <span className={this.state.linesClass}></span>
                 <span className={this.state.decorClass}></span>
-                <span className={this.state.titleClass}>{this.props.pageTitle}</span>
+                <h1 className={this.state.titleClass}>{this.props.pageTitle}</h1>
                 <span className={this.state.decorClass}></span>
                 <span className={this.state.linesClass}></span>
             </header>

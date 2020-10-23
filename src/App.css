@@ -4,8 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Raleway', sans-serif;
   background-color: #DDDFE2;
+  /* border: 1px solid black; */
 }
 
 a {
@@ -29,7 +33,11 @@ a {
   height: 300px;
 }
 
-.sampleContainer {
-  width: 100vw;
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
   height: 200vh;
 }

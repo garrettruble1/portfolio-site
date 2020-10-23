@@ -4,11 +4,11 @@ import { Switch, Route } from 'react-router-dom';
 import HomeLink from './components/HomescreenLogo/HomeLink.js'
 import Navigation from './components/nav/Navigation.js';
 import Footer from './components/footer/Footer.js';
-import Resume from './Resume.js';
+import Resume from './pages/resume/Resume.js';
 import Logo from '../src/imgs/LunasCircleLogo.png'
-import AboutMe from './AboutMe';
-import MyWork from './MyWork';
-import Contact from './Contact';
+import AboutMe from './pages/aboutme/AboutMe.js';
+import MyWork from './pages/mywork/MyWork.js';
+import Contact from './pages/contactme/Contact.js';
 
 class App extends React.Component {
   constructor(props) {
