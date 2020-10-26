@@ -7,7 +7,7 @@
     height: 180px;
     width: 100vw;
     padding-top: 20px;
-    background-image: linear-gradient(to bottom, #DDDFE2 0%, #DDDFE2 90%, transparent 100%);
+    background: linear-gradient(to bottom, #DDDFE2 0%, #DDDFE2 90%, rgba(221, 223, 226, 0) 100%);
     transition: 0.4s;
 }
 
@@ -19,7 +19,7 @@
     align-items: center;
     height: 92px;
     width: 100vw;
-    background-image: linear-gradient(to bottom, #DDDFE2 0%, #DDDFE2 80%, transparent 100%);
+    background: linear-gradient(to bottom, #DDDFE2 0%, #DDDFE2 90%, rgba(221, 223, 226, 0) 100%);
     transition: 0.4s;
 }
 
@@ -266,35 +266,35 @@
 
     .headerTitle {
         font-family: 'Raleway', serif;
-        font-size: 250%;
+        font-size: 150%;
         font-weight: 500;
     }
 
     @keyframes headerTitleShrink{
 
         0% {
-            font-size: 250%;
+            font-size: 150%;
         }
     
         100% {
-            font-size: 160%;
+            font-size: 120%;
         }
     }
     
     @keyframes headerTitleGrow {
     
         0% {
-            font-size: 160%;
+            font-size: 120%;
         }
     
         100% {
-            font-size: 250%;
+            font-size: 150%;
         }
     }
     
     .headerTitleSmall {
         font-family: 'Raleway', serif;
-        font-size: 160%;
+        font-size: 120%;
         font-weight: 500;
         animation: headerTitleShrink;
         animation-duration: 0.4s;
@@ -322,7 +322,7 @@
     .headerLines {
         display: block;
         height: 1px;
-        width: 72px;
+        width: 48px;
         background-color: #101010;
         animation: headerLinesGrow;
         animation-duration: 0.4s;
@@ -334,7 +334,7 @@
     @keyframes headerLinesShrink {
 
         0% {
-            width: 72px;
+            width: 48px;
         }
     
         100% {
@@ -349,7 +349,7 @@
         }
     
         100% {
-            width: 72px;
+            width: 48px;
         }
     }
 

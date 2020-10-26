@@ -4,7 +4,7 @@ import Header from '../../components/header/Header.js';
 
 function Resume () {
     return(
-        <div className='sampleContainer'>
+        <div className='contentContainer'>
             <Header pageTitle='Resume' />
         </div>
     )

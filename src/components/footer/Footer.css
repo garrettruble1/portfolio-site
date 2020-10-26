@@ -295,12 +295,12 @@
         display: flex;
         align-items: center;
         font-family: 'Raleway', sans-serif;
-        font-size: 75%;
+        font-size: 80%;
     }
 
     .footerLogo {
         padding: 0px 4px;
-        width: 36px;
+        width: 44px;
     }
 
     .linkElement {
