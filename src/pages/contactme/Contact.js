@@ -4,7 +4,7 @@ import Header from '../../components/header/Header.js';
 
 function Contact () {
     return(
-        <div className='sampleContainer'>
+        <div className='contentContainer'>
             <Header pageTitle='Contact Me' />
         </div>
     )

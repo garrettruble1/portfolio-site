@@ -4,7 +4,7 @@ import Header from '../../components/header/Header.js';
 
 function MyWork () {
     return(
-        <div className='sampleContainer'>
+        <div className='contentContainer'>
             <Header pageTitle='My Work' />
         </div>
     )

@@ -51,13 +51,13 @@ class AboutMe extends React.Component {
                     </span>
 
                     <span className={this.state.introTextRow}>
-                        <h2 className="introText">Hi! I'm Garrett.</h2>
+                        <h2 className="introText introText1">Hi! I'm Garrett.</h2>
                         <h2 className="introText">I'm so glad you're here.</h2>
                     </span>
 
                     <p className={this.state.elevatorText}>If you want to know about me in an elevator pitch:
                         I’m an artist, a designer, a junior developer, and a young professional eager
-                        to learn and hone my skillsets. My interests lie at the intersection of visual
+                        to increase my personal knowledgebase and hone my skillsets. My interests lie at the intersection of visual
                         design, aestheticism, and user experience design.
                     </p>
 

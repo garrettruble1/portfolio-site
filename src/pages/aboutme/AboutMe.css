@@ -2,21 +2,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 95%;
-    padding: 220px 0px 80px;
+    padding: 220px 0px 80px 0px;
     /* border: 1px dotted black; */
 }
 
 .pictureFrame {
+    position: relative;
     opacity: 0;
     grid-column-start: 3;
     grid-column-end: 7;
-    height: 100%;
+    padding-top: 100%;
     border-radius: 40px;
     overflow: hidden;
     background-color: grey;
 }
 
 .selfie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -69,24 +75,60 @@
 @media screen and (min-width: 320px) and (max-width: 667px) {
 
     .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
-        padding: 200px 20px 20px 20px;
+        padding: 172px 20px 40px 20px;
     }
     
     .pictureFrame {
-        height: 200px;
-        width: 200px;
-        border-radius: 20px;
+        position: relative;
+        opacity: 0;
+        grid-column-start: 2;
+        grid-column-end: 8;
+        padding-top: 100%;
+        border-radius: 40px;
         overflow: hidden;
         background-color: grey;
     }
-    
+
     .selfie {
-        height: 200px;
-        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .introTextRow {
+        opacity: 0;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .introText {
+        font-family: 'Cardo', serif;
+        font-size: 200%;
+        padding: 12px 0px;
+        text-align: center;
+    }
+
+    .introText1 {
+        margin-top: 12px;
+        font-size: 300%;
+    }
+
+    .elevatorText {
+        opacity: 0;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        margin-top: 16px;
+        font-size: 125%;
+        line-height: 150%;
     }
 
 }
