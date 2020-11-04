@@ -11,6 +11,7 @@
     opacity: 0;
     grid-column-start: 3;
     grid-column-end: 7;
+    margin-bottom: 40px;
     padding-top: 100%;
     border-radius: 40px;
     overflow: hidden;
@@ -29,7 +30,7 @@
 .introTextRow {
     opacity: 0;
     grid-column-start: 8;
-    grid-column-end: 16;
+    grid-column-end: 15;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,14 +41,69 @@
     font-size: 350%;
 }
 
-.elevatorText {
+.paragraphText {
     opacity: 0;
     grid-column-start: 3;
-    grid-column-end: 16;
-    margin-top: 64px;
+    grid-column-end: 15;
+    margin: 20px 0px ;
     font-size: 150%;
-    line-height: 150%;
+    line-height: 160%;
     letter-spacing: 1px;
+}
+
+.quote {
+    grid-column-start: 3;
+    grid-column-end: 15;
+    margin: 16px;
+    padding: 16px;
+    border-left: 8px solid grey;
+    font-family: 'Cardo', serif;
+    font-size: 150%;
+}
+
+.buttonContainer {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 16;
+    height: 132px;
+    margin: 40px 0px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.innerNavButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 120px;
+    border: none;
+    border-radius: 20px;
+    background-color: #101010;
+    font-family: 'Raleway', serif;
+    font-size: 200%;
+    font-weight: 300;
+    color: #DDDFE2;
+    transition: 0.3s;
+}
+
+.innerNavButton:hover {
+    width: 42%;
+    height: 132px;
+    border: none;
+    border-radius: 20px;
+    background-color: #101010;
+    font-family: 'Raleway', serif;
+    font-size: 175%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.innerNavButton:focus {
+    outline: none;
 }
 
 .contentFadeIn {
@@ -70,6 +126,100 @@
     }
 }
 
+/* ================================================= TABLET STYLES ================================================= */
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        padding: 172px 20px 40px 20px;
+    }
+
+    .pictureFrame {
+        position: relative;
+        opacity: 0;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        margin-bottom: 16px;
+        padding-top: 100%;
+        border-radius: 40px;
+        overflow: hidden;
+        background-color: grey;
+    }
+
+    .selfie {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .introTextRow {
+        opacity: 0;
+        grid-column-start: 7;
+        grid-column-end: 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .introText {
+        font-family: 'Cardo', serif;
+        font-size: 200%;
+        padding: 12px 0px;
+    }
+
+    .paragraphText {
+        opacity: 0;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        margin: 24px 0px;
+        font-size: 125%;
+        line-height: 150%;
+    }
+
+    .quote {
+        grid-column-start: 2;
+        grid-column-end: 12;
+        margin: 16px;
+        padding: 16px;
+        border-left: 8px solid grey;
+        font-family: 'Cardo', serif;
+        font-size: 130%;
+    }
+
+    .buttonContainer {
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        height: 132px;
+        margin: 20px 0px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .innerNavButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 120px;
+        border: none;
+        border-radius: 20px;
+        background-color: #101010;
+        font-family: 'Raleway', serif;
+        font-size: 200%;
+        font-weight: 300;
+        transition: 0.3s;
+    }
+}
+
 /* ================================================= MOBILE STYLES ================================================= */
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
@@ -86,6 +236,7 @@
         opacity: 0;
         grid-column-start: 2;
         grid-column-end: 8;
+        margin-bottom: 16px;
         padding-top: 100%;
         border-radius: 40px;
         overflow: hidden;
@@ -122,13 +273,53 @@
         font-size: 300%;
     }
 
-    .elevatorText {
+    .paragraphText {
         opacity: 0;
         grid-column-start: 1;
         grid-column-end: 9;
-        margin-top: 16px;
+        margin: 24px 0px;
         font-size: 125%;
         line-height: 150%;
+    }
+
+    .quote {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        margin: 16px;
+        padding: 16px;
+        border-left: 8px solid grey;
+        font-family: 'Cardo', serif;
+        font-size: 130%;
+    }
+
+
+    .buttonContainer {
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        height: 300px;
+        margin: 20px 0px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .innerNavButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px;
+        width: 100%;
+        height: 80px;
+        border: none;
+        border-radius: 20px;
+        background-color: #101010;
+        font-family: 'Raleway', serif;
+        font-size: 200%;
+        font-weight: 300;
+        transition: 0.3s;
     }
 
 }
