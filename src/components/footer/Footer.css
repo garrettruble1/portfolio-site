@@ -1,6 +1,7 @@
 .footerContainer {
     height: 48px;
     width: 100%;
+    padding: 0px 4px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
