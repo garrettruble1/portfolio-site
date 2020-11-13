@@ -1,0 +1,432 @@
+.welcome {
+    grid-column-start: 3;
+    grid-column-end: 15;
+    margin: -32px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: 150%;
+}
+
+.bold {
+    margin: 16px 0px;
+    font-family: 'Cardo', serif;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.mobileToggle {
+    display: none;
+}
+
+.formContainer {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    margin: 16px 32px;
+    border: 1px solid #101010;
+    border-radius: 32px;
+}
+
+.form {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes formFadeOut {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.formFadeOut {
+    opacity: 0;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: formFadeOut;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-direction: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.formHeader {
+    margin: 0px 0px 16px 0px;
+    font-family: 'Cardo', serif;
+    font-size: 200%;
+    color: #101010;
+}
+
+.formElement {
+    margin: 0px 0px 16px 0px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formLabel {
+    margin: 12px 8px;
+    font-family: 'Cardo', serif;
+    font-size: 120%;
+    color: #101010;
+}
+
+.formInput {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #101010;
+    border-radius: 16px;
+    outline: none;
+    background-color: #AAABAE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+}
+
+.formInput:focus {
+    background-color: #DDDFE2;
+}
+
+.message {
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+    border: 1px solid #101010;
+    border-radius: 16px;
+    outline: none;
+    background-color: #AAABAE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+}
+
+.message:focus {
+    background-color: #DDDFE2;
+}
+
+.submitContainer {
+    margin: 16px 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submitButton {
+    width: 90%;
+    height: 64px;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    background-color: #101010;
+    font-family: 'Raleway', serif;
+    font-size: 160%;
+    font-weight: 300;
+    color: #DDDFE2;
+    transition: 0.3s;
+}
+
+.submitButton:hover {
+    width: 95%;
+    height: 68px;
+    font-size: 140%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formFooter {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+.formFooterIcon {
+    height: 16px;
+    width: 16px;
+}
+
+.formSubmitSuccess {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmarkCircle {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #101010;
+}
+
+.check {
+    margin: 32px;
+    height: 200px;
+    width: 200px;
+}
+
+.messageSent {
+    font-family: 'Cardo', serif;
+    font-size: 300%;
+}
+
+.cardContainer {
+    grid-column-start: 9;
+    grid-column-end: 16;
+    margin: 16px 32px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #101010;
+    border-radius: 32px;
+    background-color: #DDDFE2;
+}
+
+.cardHeader {
+    margin: 0px 0px 32px 0px;
+    font-family: 'Cardo', serif;
+    font-size: 200%;
+    color: #101010;
+}
+
+.card {
+    height: 64px;
+    margin: 32px 0px;
+    border-radius: 16px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #101010;
+    color: #DDDFE2;
+    font-family: 'Cardo', serif;
+    font-size: 180%;
+}
+
+.squareIcon {
+    margin: 0px 20px 0px 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDFE2;
+}
+
+.circleIcon {
+    margin: 0px 20px 0px 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDFE2;
+}
+
+.githubIconContainer {
+    margin: 0px 20px 0px 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    background-color: #DDDFE2;
+}
+
+.githubIcon {
+    position: relative;
+    top: 6px;
+    right: 1px;
+    width: 30px;
+    height: 34px;
+}
+
+.links {
+    color: #DDDFE2;
+}
+
+.contactIcons {
+    height: 36px;
+    width: 36px;
+    margin: 0px 20px 0px 0px;
+}
+
+
+
+/* ================================================ MOBILE STYLES ================================================ */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .welcome {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        margin: -40px 0px 40px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 140%;
+    }
+
+    .bold {
+        margin: 16px 0px;
+        font-family: 'Cardo', serif;
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .mobileToggle {
+        display: flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        height: 40px;
+        margin: 8px 0px 32px 0px;
+        border-radius: 12px;
+        background-color: #AAABAE;
+    }
+
+    .mobileToggleButton {
+        width: 50%;
+        border-radius: 12px;
+        outline: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 110%;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .toggleButtonActive {
+        background-color: #DDDFE2;
+        border: 1px solid #101010;
+    }
+
+    .toggleButtonDisabled {
+        background-color: #AAABAE;
+        border: none;
+    }
+
+    .formContainer {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        margin: 0;
+        border: 1px solid #101010;
+        border-radius: 32px;
+    }
+
+    .form {
+        padding: 24px 16px;
+    }
+
+    .formHeader {
+        font-size: 160%;
+    }
+
+    .formInput {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #101010;
+        border-radius: 12px;
+        outline: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 120%;
+    }
+
+    .submitButton {
+        width: 95%;
+        height: 60px;
+        border: none;
+        border-radius: 16px;
+        outline: none;
+        background-color: #101010;
+        font-family: 'Raleway', serif;
+        font-size: 160%;
+        font-weight: 300;
+        color: #DDDFE2;
+        transition: 0.3s;
+    }
+
+    .cardContainer {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        margin: 0;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #101010;
+        border-radius: 32px;
+        background-color: #DDDFE2;
+    }
+
+    .cardHeader {
+        margin: 0px 0px 20px 0px;
+        font-size: 160%;
+    }
+
+    .card {
+        height: 56px;
+        margin: 24px 0px;
+        border-radius: 12px;
+        padding: 8px 8px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #101010;
+        color: #DDDFE2;
+        font-family: 'Cardo', serif;
+        font-size: 160%;
+    }
+
+    .squareIcon {
+        margin: 0px 16px 0px 0px;
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #DDDFE2;
+    }
+    
+    .circleIcon {
+        margin: 0px 16px 0px 0px;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #DDDFE2;
+    }
+
+}
