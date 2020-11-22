@@ -1,0 +1,297 @@
+.projectContainer {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 120vh;
+    padding-bottom: 40px;
+    background: linear-gradient(to top, rgba(16, 16, 16, 0.8) 90%, rgba(16, 16, 16, 0) 100%);
+    transform: translateY(120vh);
+}
+
+.openConsole {
+    animation-name: openProject;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+.closeConsole {
+    animation-name: closeProject;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes openProject {
+
+    0% {
+        display: none;
+        transform: translateY(120vh);
+    }
+
+    1% {
+        display: block;
+        transform: translateY(120vh);
+    }
+
+    100% {
+        display: block;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes closeProject {
+
+    0% {
+        display: block;
+        transform: translateY(0);
+    }
+
+    99% {
+        display: block;
+        transform: translateY(120vh);
+    }
+
+    100% {
+        transform: translateY(120vh);
+        display: none;
+    }
+
+}
+
+.projectConsole {
+    z-index: 10;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: 80%;
+    border-radius: 32px;
+    background-color: #DDDFE2;
+    animation-name: openProject;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    overflow: hidden;
+}
+
+.consolePreview {
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+}
+
+.previewImage {
+    width: initial;
+    height: 100%;
+}
+
+.closeConsoleIcon {
+    z-index: 10;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    width: 48px;
+    height: 48px;
+    background: radial-gradient(rgba(16, 16, 16, 0.9) 0%, rgba(16, 16, 16, 0) 60%);
+    transition: 0.2s;
+}
+
+.closeConsoleIcon:hover {
+    top: 0;
+    left: 6px;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.closeConsoleIcon span {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    height: 4px;
+    background-color: #DDDFE2;
+    border-radius: 10px;
+    opacity: 1;
+    left: 12px;
+    bottom: 22px;
+}
+
+.closeConsoleIcon span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.closeConsoleIcon span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.consoleInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+.consoleHeaderTile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #AAABAE;
+}
+
+.infoTile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 36px;
+}
+
+.consoleStarDecor {
+    margin: 0px 32px;
+    width: 12px;
+    height: 12px;
+}
+
+.consoleTitle {
+    font-family: 'Cardo', serif;
+    font-size: 200%;
+    color: #101010;
+}
+
+.consoleMedium {
+    position: absolute;
+    top: 86px;
+    padding: 8px 24px;
+    background-color: #DDDFE2;
+    font-weight: 300;
+}
+
+.consoleDescription {
+    padding: 12px 0px;
+    line-height: 140%;
+}
+
+/* ================================================= MOBILE STYLES ================================================= */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .projectCard {
+        margin: 40px 0px;
+        width: 300px;
+        height: 400px;
+        border-radius: 40px;
+        transition: 0.3s;
+    }
+
+    .cardImage {
+        position: absolute;
+        left: -50px;
+        height: 400px;
+        width: 400px;
+        transition: 0.3s;;
+    }
+
+    .projectContainer {
+        z-index: 10;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        height: 120vh;
+        padding-bottom: 20px;
+        background: linear-gradient(to top, rgba(16, 16, 16, 0.8) 90%, rgba(16, 16, 16, 0) 100%);
+        transform: translateY(120vh);
+    }
+
+    .projectConsole {
+        width: 95%;
+        height: 80%;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #DDDFE2;
+        animation-name: openProject;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+    }
+
+    .consoleInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    .consoleHeaderTile {
+        height: 92px;
+    }
+
+    .consoleMedium {
+        top: 60px;
+        padding: 4px 12px;
+        font-weight: 200;
+    }
+
+    .consoleDescription {
+        padding: 4px 0px;
+        line-height: 120%;
+    }
+
+    .consoleSkillChip {
+        position: relative;
+        height: 48px;
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: 1px solid #AAABAE;
+        border-radius: 12px;
+        padding-right: 20px;
+        font-size: 100%;
+        font-weight: 300;
+    }
+
+}

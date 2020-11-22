@@ -1,0 +1,326 @@
+.portfolioToggle {
+    z-index: 2;
+    position: fixed;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 40px;
+    border-radius: 12px;
+    background-color: #AAABAE;
+}
+
+.portfolioToggleButton {
+    height: 50%;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.toggleButtonActive {
+    background-color: #DDDFE2;
+    border-radius: 12px;
+    border: 1px solid #AAABAE;
+}
+
+.toggleButtonDisabled {
+    background-color: #AAABAE;
+    border: none;
+    border-radius: 12px;
+}
+
+.toggleIcons {
+    opacity: 0.7;
+    width: 28px;
+}
+
+.portfolioToggleButton .toggleText {
+    opacity: 0;
+    position: absolute;
+    left: 110%;
+    width: 180px;
+    padding: 8px 0px;
+    border-radius: 4px;
+    background-color: #101010;
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+    color: #DDDFE2;
+    transition: 0.2s;
+}
+
+.starDecor {
+    margin: 0px 8px;
+    height: 8px;
+    width: 8px;
+}
+
+.portfolioToggleButton:hover .toggleText {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.codeContainer {
+    z-index: 5;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+    grid-column-start: 2;
+    grid-column-end: 16;
+}
+
+.codeBackgroundInitial {
+    opacity: 0.1;
+}
+
+.codeBackground {
+    position: fixed;
+    right: 30%;
+    bottom: 30%;
+    min-width: 40%;
+    min-height: 40%;
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: url('../../imgs/codeBackground.png') center center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.creativeContainer {
+    z-index: 6;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+    grid-column-start: 2;
+    grid-column-end: 16;
+}
+
+.creativeBackground {
+    position: fixed;
+    right: 30%;
+    bottom: 30%;
+    min-width: 40%;
+    min-height: 40%;
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: url('../../imgs/creativeBackground.png') center center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.backgroundFadeIn {
+    animation-name: backgroundIn;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+.backgroundFadeOut {
+    animation-name: backgroundOut;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+.contentIn {
+    animation-name: contentIn;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+.contentOut {
+    animation-name: contentOut;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes backgroundIn {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes backgroundOut {
+    0% {
+        opacity: 0.1;
+        transform: translateY(0);
+    }
+
+    40% {
+        opacity: 0.1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+@keyframes contentIn {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes contentOut {
+    0%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ================================================= MOBILE STYLES ================================================= */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .portfolioToggle {
+        z-index: 5;
+        position: fixed;
+        top: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 64px;
+        width: 32px;
+        border-radius: 16px;
+        background-color: #AAABAE;
+    }
+
+    .toggleButtonActive {
+        padding-top: 2px;
+        background-color: #DDDFE2;
+        border-radius: 16px;
+        border: 1px solid rgb(170, 171, 174);
+    }
+    
+    .toggleButtonDisabled {
+        padding-top: 2px;
+        background-color: #AAABAE;
+        border: none;
+        border-radius: 16px;
+    }
+
+    .toggleIcons {
+        opacity: 0.7;
+        width: 20px;
+    }
+
+    .portfolioToggleButton .toggleText {
+        opacity: 0;
+        position: absolute;
+        left: 110%;
+        width: 136px;
+        padding: 4px 0px;
+        border-radius: 16px;
+        background-color: #101010;
+        font-family: 'Raleway', sans-serif;
+        font-size: 100%;
+        color: #DDDFE2;
+        transition: 0.2s;
+    }
+    
+    .starDecor {
+        margin: 0px 4px;
+        height: 6px;
+        width: 6px;
+    }
+    
+    .portfolioToggleButton:hover .toggleText {
+        opacity: 1;
+        transition: 0.2s;
+    }
+
+    .codeContainer {
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        flex-wrap: wrap;
+        grid-column-start: 2;
+        grid-column-end: 8;
+    }
+
+    .codeBackground {
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        min-width: 90%;
+        min-height: 90%;
+        width: auto;
+        height: auto;
+        margin: 0;
+        background: url('../../imgs/codeBackground.png') center center no-repeat;
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+
+    .creativeContainer {
+        z-index: 6;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        grid-column-start: 2;
+        grid-column-end: 8;
+    }
+
+    .creativeBackground {
+        position: fixed;
+        right: 10%;
+        bottom: 10%;
+        min-width: 80%;
+        min-height: 80%;
+        width: auto;
+        height: auto;
+        margin: 0;
+        background: url('../../imgs/creativeBackground.png') center center no-repeat;
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+}
+

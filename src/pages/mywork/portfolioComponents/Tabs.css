@@ -1,0 +1,90 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tabList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #AAABAE;
+    list-style-type: none;
+}
+  
+.tabListItem {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #AAABAE ;
+    border-style: solid solid none solid;
+    border-radius: 0px 0px 20px 20px;
+    padding: 32px;
+    background-color: #DDDFE2;
+    list-style: none;
+    font-size: 110%;
+    font-weight: 300;
+}
+
+.tabListItem:hover {
+    cursor: pointer;
+}
+  
+.tabItemActive {
+    border-radius: 0px 0px 20px 20px;
+    border: 0px;
+    border-style: none;
+    background-color: #DDDFE2;
+}
+
+.tabContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+    padding: 32px;
+}
+
+/* ================================================= MOBILE STYLES ================================================= */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .tabList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(to top, rgb(170, 171, 174) 50%, rgb(221, 223, 226) 50% 100%);
+        list-style-type: none;
+    }
+    
+
+    .tabListItem {
+        padding: 20px;
+        background-color: #DDDFE2;
+        border: 1px #AAABAE ;
+        border-style: solid solid none solid;
+        list-style: none;
+        font-size: 105%;
+        font-weight: 300;
+    }
+
+    .tabItemActive {
+        border-radius: 0px 0px 20px 20px;
+        border: none;
+        border-style: none;
+        background-color: #DDDFE2;
+    }
+
+    .tabContent {
+        margin-top: 8px;
+        padding: 20px;
+    }
+}
