@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomeLink from './components/HomescreenLogo/HomeLink.js'
 import Navigation from './components/nav/Navigation.js';
 import Footer from './components/footer/Footer.js';
+import TopScroll from './components/scroll/TopScroll.js';
 import Resume from './pages/resume/Resume.js';
 import Logo from '../src/imgs/LunasCircleLogo.png'
 import AboutMe from './pages/aboutme/AboutMe.js';
@@ -14,27 +15,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state= {
-      navMenuOpen: false,
+      initialize: true
     }
   }
 
-  toggleNavMenu = () => {
-    this.setState({
-      navMenuOpen: !this.state.navMenuOpen
-    })
-  }
 
-  closeNavMenu = () => {
-    this.setState({
-      navMenuOpen: false
-    })
-  }
-  
   render() {
     return (
       <div>
         <HomeLink />
-        <Navigation menuState={this.state.navMenuOpen} menuToggle={this.toggleNavMenu} menuClose={this.closeNavMenu} />
+        <Navigation />
 
       <Switch>
 
@@ -61,6 +51,8 @@ class App extends React.Component {
         </Route>
 
       </Switch>
+
+      <TopScroll />
 
       <Footer />
       </div>

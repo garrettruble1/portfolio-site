@@ -30,6 +30,8 @@ class AboutMe extends React.Component {
             paragraphText: 'paragraphText contentFadeIn',
             })
         }, 600)
+
+        window.scrollTo(0, 0);
     }
 
     componentWillUnmount() {

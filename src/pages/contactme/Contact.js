@@ -39,6 +39,8 @@ class Contact extends React.Component {
                 cardsVisibility: false,
             })
         }
+
+        window.scrollTo(0, 0);
     }
 
     handleInputChange = (e) => {

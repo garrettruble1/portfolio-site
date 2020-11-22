@@ -1,0 +1,104 @@
+.carouselContainer {
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+}
+
+.prevImage {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, rgba(16, 16, 16, 0.5) 0%, rgba(16, 16, 16, 0) 100%);
+    transition: 0.2s;
+}
+
+.prevImage:hover {
+    width: 48px;
+    background: linear-gradient(to right, rgba(16, 16, 16, 0.7) 0%, rgba(16, 16, 16, 0) 100%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.prevImage:hover .backArrow {
+    margin-left: 16px;
+    transition: 0.2s;
+}
+
+.backArrow {
+    margin-left: 8px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 16px solid #DDDFE2;
+    border-bottom: 20px solid transparent;
+    transition: 0.2s;
+}
+
+.nextImage {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(to left, rgba(16, 16, 16, 0.5) 0%, rgba(16, 16, 16, 0) 100%);
+    transition: 0.2s;
+}
+
+.nextImage:hover {
+    width: 48px;
+    background: linear-gradient(to left, rgba(16, 16, 16, 0.7) 0%, rgba(16, 16, 16, 0) 100%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.forwardArrow {
+    margin-left: 12px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 16px solid #DDDFE2;
+    border-bottom: 20px solid transparent;
+}
+
+.active {
+    display: block;
+}
+
+/* ================================================= MOBILE STYLES ================================================= */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .carouselContainer {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #101010;
+    }
+
+    .backArrow {
+        margin-left: 8px;
+        border-top: 12px solid transparent;
+        border-right: 8px solid #DDDFE2;
+        border-bottom: 12px solid transparent;
+    }
+
+    .forwardArrow {
+        margin-left: 24px;
+        border-top: 12px solid transparent;
+        border-left: 8px solid #DDDFE2;
+        border-bottom: 12px solid transparent;
+    }
+
+}
