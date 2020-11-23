@@ -1,0 +1,123 @@
+.resumeContainer {
+    opacity: 0;
+    grid-column-start: 4;
+    grid-column-end: 14;
+    height: 1120px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.resume {
+    height: 100%;
+    width: 100%;
+}
+
+.contentFadeIn {
+    animation-name: contentFadeIn;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contentFadeIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.resumeButtonContainer {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 4;
+    grid-column-end: 14;
+    height: 100px;
+    background-color: transparent;
+}
+
+.linkedInButton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    padding: 8px 16px;
+    background-color: #101010;
+    font-family: 'Cardo', serif;
+    font-size: 200%;
+    font-weight: 500;
+    color: #DDDFE2;
+    transition: 0.2s;
+}
+
+.linkedInButton:hover {
+    cursor: pointer;
+    height: 88px;
+    width: 472px;
+    transition: 0.2s;
+}
+
+.inIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    background-color: #DDDFE2;
+}
+
+.inIcon {
+    width: 70%;
+}
+
+/* ================================================= MOBILE STYLES ================================================= */
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    .resumeContainer {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        height: 500px;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .resumeButtonContainer {
+        margin: 20px;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        height: 80px;
+        background-color: transparent;
+    }
+
+    .linkedInButton {
+        width: 300px;
+        height: 60px;
+        border-radius: 16px;
+        padding: 4px 8px;
+        background-color: #101010;
+        font-family: 'Cardo', serif;
+        font-size: 120%;
+        font-weight: 500;
+        color: #DDDFE2;
+        transition: 0.2s;
+    }
+
+    .inIconContainer {
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        background-color: #DDDFE2;
+    }
+}

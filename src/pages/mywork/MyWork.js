@@ -37,7 +37,7 @@ class MyWork extends React.Component {
                     title: "Lunas",
                     medium: "Website",
                     description: "Here's a longer test description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                    skills: ["ps", "ai", "ae"],
+                    skills: ["ps", "ai", "ae", "git"],
                     links: [
                         {
                             site: "yt",
@@ -60,26 +60,6 @@ class MyWork extends React.Component {
                             destination: "https://www.codepen.io/"
                         },
                     ]
-                },
-                {
-                    id: nanoid(),
-                    cardImage: TestImage1,
-                    previewImages: [TestImage1],
-                    title: "Self Portrait",
-                    medium: "Digital Illustration",
-                    description: "A self portrait, created using blah blah blah blah",
-                    skills: [],
-                    links: []
-                },
-                {
-                    id: nanoid(),
-                    cardImage: TestImage2,
-                    previewImages: [TestImage2],
-                    title: "Ramona Flowers",
-                    medium: "Digital Illustration",
-                    description: "A portrait of Ramona Flowers from the movie Scott Pilgrim Vs. The World...",
-                    skills: [],
-                    links: []
                 },
             ],
             creativeProjects: [
