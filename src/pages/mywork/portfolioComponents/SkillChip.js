@@ -9,6 +9,8 @@ import CssIcon from '../../../imgs/skillIcons/cssIcon.png';
 import JavascriptIcon from '../../../imgs/skillIcons/javascriptIcon.png';
 import GithubIcon from '../../../imgs/skillIcons/githubIcon.png';
 import ReactIcon from '../../../imgs/skillIcons/reactIcon.png';
+import PencilIcon from '../../../imgs/skillIcons/pencilIcon.png';
+import InkIcon from '../../../imgs/skillIcons/inkIcon.png';
 import LunasCard from '../../../imgs/lunasCard.png';
 
 function SkillChip(props) {
@@ -53,6 +55,14 @@ function SkillChip(props) {
                 icon = ReactIcon;
                 text = "REACTJS";
                 break;
+            case 'pnc':
+                icon = PencilIcon;
+                text= "PENCIL";
+                break;
+            case 'ink':
+                icon = InkIcon;
+                text = "INK";
+                break;
             default:
                 icon = LunasCard;
                 text = "LUNAS"
@@ -86,7 +96,6 @@ const SkillChipContainer = styled.div`
         border-style: solid solid solid none;
         border-radius: 30px 12px 12px 30px;
         @media (max-width: 667px) {
-            flex-wrap: 'wrap';
             margin: 4px;
             height: 48px;
         }

@@ -1,3 +1,41 @@
+.aboutMeBackground {
+    z-index: -2;
+    position: fixed;
+    right: 80px;
+    bottom: -180px;
+    min-height: 140%;
+    min-width: 140%;
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: url('./aboutMeBackground.png') center center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.backgroundIn {
+    animation-name: aboutBackgroundIn;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes aboutBackgroundIn {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+}
+
 .pictureFrame {
     position: relative;
     opacity: 0;

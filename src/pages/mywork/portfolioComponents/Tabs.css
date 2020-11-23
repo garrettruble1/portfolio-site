@@ -44,12 +44,13 @@
 
 .tabContent {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-top: 16px;
     width: 100%;
     padding: 32px;
+    line-height: 150%;
 }
 
 /* ================================================= MOBILE STYLES ================================================= */
@@ -86,5 +87,7 @@
     .tabContent {
         margin-top: 8px;
         padding: 20px;
+        font-size: 90%;
+        line-height: 120%;
     }
 }

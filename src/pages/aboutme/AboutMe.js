@@ -8,6 +8,7 @@ class AboutMe extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            background: 'hidden',
             pictureFrame: 'pictureFrame',
             introTextRow: 'introTextRow',
             paragraphText: 'paragraphText',
@@ -15,6 +16,13 @@ class AboutMe extends React.Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0);
+        
+        setTimeout(() => {
+            this.setState({
+                background: 'aboutMeBackground backgroundIn'
+            })
+        }, 100)
         setTimeout(() => {
             this.setState({
                 pictureFrame: 'pictureFrame contentFadeIn',
@@ -30,8 +38,6 @@ class AboutMe extends React.Component {
             paragraphText: 'paragraphText contentFadeIn',
             })
         }, 600)
-
-        window.scrollTo(0, 0);
     }
 
     componentWillUnmount() {
@@ -46,6 +52,7 @@ class AboutMe extends React.Component {
         return (
             <div className='contentContainer'>
                 <Header pageTitle='About Me' />
+                <div className={this.state.background}></div>
 
                 <div className='content'>
                     <span className={this.state.pictureFrame}>
