@@ -6,7 +6,6 @@ import BlackStar from '../../../imgs/LunasStarBlack.png';
 import Tabs from './Tabs.js';
 import SkillChip from './SkillChip.js';
 import LinkChip from './LinkChip.js';
-import { Link } from 'react-router-dom';
 
 class Project extends React.Component {
     constructor(props) {
@@ -158,21 +157,5 @@ class Project extends React.Component {
         )
     }
 }
-
-let projectLinkStyle = {
-    width: '100%',
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-}
-
-const ProjectLinkContainer = styled.div`
-    height: 150px;
-    width: 300px;
-    background-color: #101010;
-    border-radius: 20px;
-`;
 
 export default Project;

@@ -82,8 +82,9 @@ const SkillChipContainer = styled.div`
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid #AAABAE;
-        border-radius: 12px;
+        border: 1px #AAABAE;
+        border-style: solid solid solid none;
+        border-radius: 30px 12px 12px 30px;
         @media (max-width: 667px) {
             flex-wrap: 'wrap';
             margin: 4px;
