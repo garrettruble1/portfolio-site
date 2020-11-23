@@ -199,11 +199,6 @@
     font-weight: 300;
 }
 
-.consoleDescription {
-    padding: 12px 0px;
-    line-height: 140%;
-}
-
 /* ================================================= MOBILE STYLES ================================================= */
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
@@ -267,6 +262,10 @@
 
     .consoleHeaderTile {
         height: 92px;
+    }
+
+    .consoleTitle {
+        font-size: 150%;
     }
 
     .consoleMedium {

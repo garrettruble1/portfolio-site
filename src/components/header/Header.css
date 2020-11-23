@@ -7,7 +7,7 @@
     height: 180px;
     width: 100vw;
     padding-top: 20px;
-    background: linear-gradient(to bottom, #DDDFE2 0%, #DDDFE2 90%, rgba(221, 223, 226, 0) 100%);
+    background: linear-gradient(to bottom, rgba(221, 223, 226, 1) 0%, rgba(221, 223, 226, 0) 100%);
     transition: 0.4s;
 }
 
@@ -19,7 +19,7 @@
     align-items: center;
     height: 92px;
     width: 100vw;
-    background: linear-gradient(to bottom, #DDDFE2 0%, #DDDFE2 90%, rgba(221, 223, 226, 0) 100%);
+    background: linear-gradient(to bottom, rgba(221, 223, 226, 1) 10%, rgba(221, 223, 226, 0) 100%);
     transition: 0.4s;
 }
 
