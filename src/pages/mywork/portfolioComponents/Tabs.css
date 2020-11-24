@@ -37,8 +37,8 @@
   
 .tabItemActive {
     border-radius: 0px 0px 20px 20px;
-    border: 0px;
-    border-style: none;
+    border: 1px #DDDFE2;
+    border-style: solid none none none;
     background-color: #DDDFE2;
 }
 
@@ -79,8 +79,8 @@
 
     .tabItemActive {
         border-radius: 0px 0px 20px 20px;
-        border: none;
-        border-style: none;
+        border: 1px #DDDFE2;
+        border-style: solid none none none;
         background-color: #DDDFE2;
     }
 

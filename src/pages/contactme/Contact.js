@@ -106,6 +106,7 @@ class Contact extends React.Component {
         return(
             <div className='contentContainer'>
                 <Header pageTitle='Contact Me' />
+                <div className='contactBackground'></div>
 
                 <div className='content'>
                     <div className='welcome'>

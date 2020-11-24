@@ -1,3 +1,19 @@
+.contactBackground {
+    opacity: 0.3;
+    z-index: -2;
+    position: fixed;
+    min-height: 130%;
+    min-width: 130%;
+    height: auto;
+    width: auto;
+    background: url('./contactBackground.png') center center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
 .welcome {
     grid-column-start: 3;
     grid-column-end: 15;
@@ -24,8 +40,8 @@
     grid-column-start: 2;
     grid-column-end: 9;
     margin: 16px 32px;
-    border: 1px solid #101010;
     border-radius: 32px;
+    background-color: #DDDFE2;
 }
 
 .form {
@@ -202,7 +218,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid #101010;
     border-radius: 32px;
     background-color: #DDDFE2;
 }

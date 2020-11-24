@@ -66,7 +66,7 @@ class Project extends React.Component {
             margin: 40px;
             width: 200px;
             height: 300px;
-            border-radius: 40px;
+            border-radius: 32px;
             transition: 0.3s;
             font-family: 'Raleway', sans-serif;
             font-size: 140%;
@@ -81,6 +81,7 @@ class Project extends React.Component {
                     font-size: 150%;
                     transition: 0.3s;
                 }
+                margin: 32px;
                 width: 220px;
                 height: 340px;
                 cursor: pointer;
@@ -89,7 +90,7 @@ class Project extends React.Component {
         `;
 
         return(
-            <div key={this.props.id}>
+            <div key={this.props.id} style={{position: 'relative'}}>
 
                 <ProjectCard onClick={() => this.openClick()}>
                     <CardImage></CardImage>

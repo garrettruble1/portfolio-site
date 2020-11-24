@@ -27,6 +27,7 @@ class Resume extends React.Component {
         return(
             <div className='contentContainer'>
                 <Header pageTitle='Resume' />
+                <div className='resumeBackground'></div>
 
                 <div className='content'>
                     <div className={this.state.resume}>

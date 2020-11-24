@@ -118,6 +118,7 @@
 }
 
 .iconText {
+    display: none;
     position: absolute;
     top: 7px;
     left: 32px;
@@ -163,6 +164,7 @@
 }
 
 .linkTag:hover .iconText {
+    display: inline-block;
     position: absolute;
     left: 32px;
     opacity: 1;
