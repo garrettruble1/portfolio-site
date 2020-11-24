@@ -17,12 +17,12 @@ class AboutMe extends React.Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        
+
         setTimeout(() => {
             this.setState({
                 background: 'aboutMeBackground backgroundIn'
             })
-        }, 100)
+        }, 200)
         setTimeout(() => {
             this.setState({
                 pictureFrame: 'pictureFrame contentFadeIn',

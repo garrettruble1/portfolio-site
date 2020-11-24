@@ -1,5 +1,21 @@
+.portfolioBackground {
+    opacity: 0.45;
+    z-index: -2;
+    position: fixed;
+    min-height: 110%;
+    min-width: 110%;
+    height: auto;
+    width: auto;
+    background: url('./portfolioBackground.png') center center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
 .portfolioToggle {
-    z-index: 2;
+    z-index: 4;
     position: fixed;
     top: 15%;
     display: flex;
@@ -95,7 +111,7 @@
 }
 
 .creativeContainer {
-    z-index: 6;
+    z-index: 5;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -167,18 +183,18 @@
     }
 
     100% {
-        opacity: 0.1;
+        opacity: 0.2;
     }
 }
 
 @keyframes backgroundOut {
     0% {
-        opacity: 0.1;
+        opacity: 0.2;
         transform: translateY(0);
     }
 
     40% {
-        opacity: 0.1;
+        opacity: 0.2;
         transform: translateY(0);
     }
 
@@ -213,7 +229,7 @@
 @media screen and (min-width: 320px) and (max-width: 667px) {
 
     .portfolioToggle {
-        z-index: 5;
+        z-index: 4;
         position: fixed;
         top: 12%;
         display: flex;
@@ -298,7 +314,7 @@
     }
 
     .creativeContainer {
-        z-index: 6;
+        z-index: 5;
         display: flex;
         justify-content: center;
         align-items: top;

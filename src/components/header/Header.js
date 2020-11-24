@@ -7,6 +7,7 @@ class Header extends React.Component {
 
         this.state = {
             headerClass: "headerContainer",
+            gradientClass: "contrastGradient",
             decorClass: "headerDecoration",
             linesClass: "headerLines",
             titleClass: "headerTitle"
@@ -30,6 +31,7 @@ class Header extends React.Component {
         if (distanceY > shrinkOn) {
           this.setState({
             headerClass: "headerContainerSmall",
+            gradientClass: "contrastGradient",
             decorClass: "headerDecorationSmall",
             linesClass: "headerLinesSmall",
             titleClass: "headerTitleSmall"
@@ -37,6 +39,7 @@ class Header extends React.Component {
         } else {
             this.setState({
                 headerClass: "headerContainer",
+                gradientClass: "hidden",
                 decorClass: "headerDecoration",
                 linesClass: "headerLines",
                 titleClass: "headerTitle"
@@ -52,6 +55,7 @@ class Header extends React.Component {
                 <h1 className={this.state.titleClass}>{this.props.pageTitle}</h1>
                 <span className={this.state.decorClass}></span>
                 <span className={this.state.linesClass}></span>
+                <div className={this.state.gradientClass}></div>
             </header>
         )
     }
