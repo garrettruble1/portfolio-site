@@ -228,6 +228,22 @@
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
 
+    .portfolioBackground {
+        opacity: 0.45;
+        z-index: -2;
+        position: fixed;
+        min-height: 110%;
+        min-width: 110%;
+        height: auto;
+        width: auto;
+        background: url('./portfolioBackground.png') center center no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     .portfolioToggle {
         z-index: 4;
         position: fixed;

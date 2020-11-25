@@ -261,16 +261,22 @@
     }
 
     .consoleHeaderTile {
-        height: 92px;
+        height: 80px;
     }
 
     .consoleTitle {
-        font-size: 150%;
+        font-size: 200%;
+    }
+
+    .consoleStarDecor {
+        margin: 0px 16px;
+        width: 8px;
+        height: 8px;
     }
 
     .consoleMedium {
-        top: 60px;
-        padding: 4px 12px;
+        top: 54px;
+        padding: 2px 12px;
         font-weight: 200;
     }
 

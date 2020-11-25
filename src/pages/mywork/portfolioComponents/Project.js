@@ -81,7 +81,7 @@ class Project extends React.Component {
                     font-size: 150%;
                     transition: 0.3s;
                 }
-                margin: 32px;
+                margin: 0px 30px;
                 width: 220px;
                 height: 340px;
                 cursor: pointer;

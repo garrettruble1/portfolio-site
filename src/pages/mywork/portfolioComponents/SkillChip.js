@@ -4,6 +4,7 @@ import PhotoshopIcon from '../../../imgs/skillIcons/photoshopIcon.png';
 import IllustratorIcon from '../../../imgs/skillIcons/illustratorIcon.png';
 import AfterEffectsIcon from '../../../imgs/skillIcons/aftereffectsIcon.png';
 import FigmaIcon from '../../../imgs/skillIcons/figmaIcon.png';
+import FramerMotion from '../../../imgs/skillIcons/framerMotionIcon.png';
 import HtmlIcon from '../../../imgs/skillIcons/htmlIcon.png';
 import CssIcon from '../../../imgs/skillIcons/cssIcon.png';
 import JavascriptIcon from '../../../imgs/skillIcons/javascriptIcon.png';
@@ -34,6 +35,10 @@ function SkillChip(props) {
             case 'figma':
                 icon = FigmaIcon;
                 text = "FIGMA";
+                break;
+            case 'fm':
+                icon = FramerMotion;
+                text = "FRAMER MOTION";
                 break;
             case 'html':
                 icon = HtmlIcon;
