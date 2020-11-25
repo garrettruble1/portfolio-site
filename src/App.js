@@ -5,8 +5,8 @@ import HomeLink from './components/HomescreenLogo/HomeLink.js'
 import Navigation from './components/nav/Navigation.js';
 import Footer from './components/footer/Footer.js';
 import TopScroll from './components/scroll/TopScroll.js';
+import { motion } from 'framer-motion';
 import Resume from './pages/resume/Resume.js';
-import Logo from '../src/imgs/LunasCircleLogo.png'
 import AboutMe from './pages/aboutme/AboutMe.js';
 import MyWork from './pages/mywork/MyWork.js';
 import Contact from './pages/contactme/Contact.js';
@@ -19,7 +19,6 @@ class App extends React.Component {
     }
   }
 
-
   render() {
     return (
       <div>
@@ -29,8 +28,7 @@ class App extends React.Component {
       <Switch>
 
         <Route exact path='/'>
-          <div className='placeholderLayout'>
-            <img src={ Logo } alt='Lunas Logo' className='logoPlaceholder' />
+          <div style={homepageSection}>
           </div>
         </Route>
 
@@ -58,6 +56,10 @@ class App extends React.Component {
       </div>
     );
   }
+}
+
+const homepageSection = {
+  height: '200vh',
 }
 
 export default App;
