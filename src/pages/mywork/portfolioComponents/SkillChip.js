@@ -102,7 +102,7 @@ const SkillChipContainer = styled.div`
         border-radius: 30px 12px 12px 30px;
         @media (max-width: 667px) {
             margin: 4px;
-            height: 48px;
+            height: 36px;
         }
     `;
 
