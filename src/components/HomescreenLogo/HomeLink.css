@@ -1,7 +1,7 @@
 .linkContainer {
     position: fixed;
-    top: 24px;
-    left: 24px;
+    top: 20px;
+    left: 20px;
     z-index: 4;
 }
 

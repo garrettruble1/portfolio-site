@@ -4,14 +4,14 @@ import BlackStarImg from '../../imgs/LunasStarBlack.png';
 
 function BlackStar(props) {
 
-    const blackStar = styled.img`
+    const BlackStar = styled.img`
         margin: ${props.space || '20px'};
         height: ${props.size || '20px'};
         width: ${props.size || '20px'};
     `;
 
     return (
-        <blackStar src={BlackStarImg} />
+        <BlackStar src={BlackStarImg} />
     )
 }
 

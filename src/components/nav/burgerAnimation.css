@@ -1,7 +1,7 @@
 .toggleContainer {
     position: fixed;
-    top: 24px;
-    right: 24px;
+    top: 20px;
+    right: 20px;
     z-index: 8;
     display: flex;
     justify-content: space-around;
@@ -19,12 +19,14 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 110%;
+    color: #101010;
 }
 
 .menuLabelClose {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 110%;
+    color: #101010;
 }
 
 .hidden {

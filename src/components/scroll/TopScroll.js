@@ -21,7 +21,7 @@ class TopScroll extends React.Component {
 
         const distanceY = window.pageYOffset ||
           document.documentElement.scrollTop
-        const showOn = 100;
+        const showOn = 1000;
     
         if (distanceY > showOn) {
           this.setState({

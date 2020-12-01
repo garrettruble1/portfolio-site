@@ -6,10 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #DDDFE2;
-  /* border: 1px solid black; */
 }
 
 a {
@@ -24,11 +27,112 @@ a {
   width: 100%;
 }
 
+.desktopHomepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 600vh;
+  width: 100%;
+}
+
+.mobileHomepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 600vh;
+  width: 100%;
+}
+
+.scrollPrompt {
+  position: absolute;
+  bottom: 8px;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.scrollArrow {
+  height: 32px;
+  width: 32px;
+}
+
+.scrollArrow span {
+  display: block;
+  position: absolute;
+  width: 24%;
+  height: 24%;
+  height: 3px;
+  background-color: #DDDFE2;
+  border-radius: 10px;
+  opacity: 1;
+  bottom: 20px;
+}
+
+.scrollArrow span:nth-child(1) {
+  left: 20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.scrollArrow span:nth-child(2) {
+  left: 28px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.scrollText {
+  text-align: center;
+  font-size: 80%;
+  font-weight: 300;
+  color: #DDDFE2;
+}
+
+.sectionContainer {
+  position: relative;
+  height: 16%;
+  width: 100vw;
+}
+
+.sectionHeader {
+  margin: 16px 0px;
+  width: 200%;
+  font-family: 'Cardo', serif;
+  font-size: 360%;
+}
+
+.sectionLink {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: #101010;
+  padding: 8px;
+  color: #DDDFE2;
+  font-size: 260%;
+  font-weight: 600;
+}
+
+.sectionLinkArrow {
+  height: 24px;
+  width: 20px;
+}
+
 .hidden {
   display: none;
 }
-
-/* === CONTENT CONTAINERS ======================================================================================= */
 
 /* === DESKTOP === */
 
@@ -59,5 +163,27 @@ a {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       width: 100%;
       padding: 172px 20px 40px 20px;
+    }
+
+    .sectionHeader {
+      margin: 32px 0px;
+      width: 120%;
+      font-size: 230%;
+      font-weight: 700;
+    }
+
+    .sectionLink {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80%;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      background-color: #101010;
+      padding: 4px;
+      color: #DDDFE2;
+      font-size: 240%;
+      font-weight: 600;
     }
 }
