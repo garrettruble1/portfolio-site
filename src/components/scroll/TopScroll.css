@@ -1,9 +1,10 @@
 .topScrollButton {
+    z-index: 1;
     position: fixed;
-    right: 40px;
-    bottom: 72px;
-    height: 48px;
-    width: 48px;
+    right: 32px;
+    bottom: 64px;
+    height: 40px;
+    width: 40px;
     border: none;
     outline: none;
     border-radius: 24px;
@@ -22,17 +23,17 @@
 .topScrollButton span {
     display: block;
     position: absolute;
-    width: 30%;
-    height: 30%;
+    width: 32%;
+    height: 32%;
     height: 3px;
     background-color: #DDDFE2;
     border-radius: 10px;
     opacity: 1;
-    bottom: 23px;
+    bottom: 20px;
 }
 
 .topScrollButton span:nth-child(1) {
-    left: 21px;
+    left: 18px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -40,7 +41,7 @@
 }
 
 .topScrollButton span:nth-child(2) {
-    left: 13px;
+    left: 10px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -67,8 +68,8 @@
         position: fixed;
         right: 24px;
         bottom: 48px;
-        height: 48px;
-        width: 48px;
+        height: 40px;
+        width: 40px;
         border-radius: 24px;
     }
 
