@@ -64,7 +64,7 @@ const CodePortfolio = [
         ],
         title: "Lunas",
         medium: "ReactJS Portfolio",
-        description: "I included a place for this site in this portfolio, but I hope my work speaks for itself. The task of creating a website portfolio has been a daunting task and presented many obstacles along the way. On this side of the project, I feel a swelling sense of pride and accomplishment in what I've created here. Lunas now has a home and place for expression in the web world. I hope you enjoy my work, thank you for being here!",
+        description: "I included a place for this site in this portfolio, but I hope my work speaks for itself. The task of creating a website portfolio has been a daunting task and presented many obstacles along the way. On this side of the project, I feel a swelling sense of pride and accomplishment in what I've created here. Lunas now has a home and place for expression in the digital realm. I hope you enjoy my work, thank you for being here!",
         skills: ["ps", "ai", "html", "css", "js", "fm", "react", "git"],
         links: [
             {
@@ -101,7 +101,7 @@ const CodePortfolio = [
         ],
         title: "Mindbites",
         medium: "ReactJS App",
-        description: "Mindbites is a collaborative project application to build out a fully functioning React application. I worked in a team to put learned React concepts to a more comprehensive use in designing and building a fully functioning application over a month. Our goal was to build an app that put 2 minute long ('bite-sized') mindfulness exercises with the user's reach. The team divided our time over the weeks to do user experience research, design, and build and debug our application. As with any teamwork, unforseen bumps and obstacles were a part of our journey, and the application isn't as fully fleshed out as I would like. But I still feel proud of the goals we were able to meet and the finished application we turned in.",
+        description: "Mindbites is a collaborative project application to build out a fully functioning React application. I worked in a team to put learned React concepts to a more comprehensive use in designing and building a fully functioning application over a month. Our goal was to build an app that put 2 minute long ('bite-sized') mindfulness exercises within the user's reach. The team divided our time over the weeks to do user experience research, design, build and debug our application. As with any collaborative project, unforseen bumps and obstacles were a part of our journey, and the application isn't as fully fleshed out as I would like. But I still feel proud of the goals we were able to meet and the finished application we turned in.",
         skills: ["html", "css", "js", "react", "git"],
         links: [
             {
@@ -155,7 +155,7 @@ const CodePortfolio = [
         ],
         title: "Zenith",
         medium: "Website, CSS Layout",
-        description: "Zenith is a project website to practice CSS layout learning goals. I was provided an image of a mockup of the site, and was instructed to replicate it as precisely and accurately as possible in the format of a real web page. This project helped me comprehend various CSS layout styles, including grid, flexbox, relative positioning, absolute positioning, fixed positioning, margins, padding, and other similar methods.",
+        description: "Zenith is a project website to practice CSS layout learning goals. I was provided an image of a mockup of the site as well as the files for all the visual design components, and was instructed to replicate it as precisely and accurately as possible in the format of a real web page. This project helped me comprehend various CSS layout styles, including grid, flexbox, relative positioning, absolute positioning, fixed positioning, margins, padding, and other similar methods.",
         skills: ["html", "css", "git",],
         links: [
             {
@@ -176,7 +176,7 @@ const CodePortfolio = [
         ],
         title: "User Interaction",
         medium: "Custom CSS Animation",
-        description: "This is a project demonstrating my abilities in CSS animations. I was instructed to use find interaction animations that inspired me, and use CSS animation techniques to recreate something I liked, or create a custom animated user interactions. The purpose of this project was to think about how implementing animations to a site or application can enhance user experience design, adding elements that not only can help communicate functionality, but also contribute an aspect of design that can be a small surprise for the user.",
+        description: "This is a project demonstrating my abilities in CSS animations. I was instructed to find interaction animations that inspired me, and use CSS animation techniques to recreate something I liked, or create a custom animated user interactions. The purpose of this project was to think about how implementing animations to a site or application can enhance user experience design, adding elements that not only can help communicate functionality, but also contribute an aspect of design that can be a small surprise for the user.",
         skills: ["html", "css", "js", "react", "git", "ai"],
         links: [
             {
