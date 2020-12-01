@@ -8,6 +8,15 @@ import CodeIcon from '../../imgs/codeIcon.png';
 import CreativeIcon from '../../imgs/creativeIcon.png';
 import WhiteStar from '../../imgs/LunasStarWhite.png';
 
+import PortfolioCard from './projectFiles/portfolioCard.png';
+import PortfolioImg1 from './projectFiles/portfolioImg1.gif';
+import PortfolioImg2 from './projectFiles/portfolioImg2.png';
+import PortfolioImg3 from './projectFiles/portfolioImg3.png';
+import PortfolioImg4 from './projectFiles/portfolioImg4.png';
+import PortfolioImg5 from './projectFiles/portfolioImg5.png';
+import PortfolioImg6 from './projectFiles/portfolioImg6.png';
+import PortfolioImg7 from './projectFiles/portfolioImg7.png';
+
 import MindbitesCard from './projectFiles/mindbitesCard.jpg';
 import Mindbites1 from './projectFiles/mindbitesScreen1.png';
 import Mindbites2 from './projectFiles/mindbitesScreen2.png';
@@ -79,6 +88,51 @@ class MyWork extends React.Component {
             creativeVisible: 'hidden',
             portfolioBackground: 'hidden',
             codeProjects: [
+                {
+                    id: nanoid(),
+                    cardImage: PortfolioCard,
+                    previewImages: [
+                        {
+                            label: "Home Page",
+                            image: PortfolioImg1
+                        },
+                        {
+                            label: "About Me Page",
+                            image: PortfolioImg2
+                        },
+                        {
+                            label: "Code Portfolio",
+                            image: PortfolioImg3
+                        },
+                        {
+                            label: "Creative Portfolio",
+                            image: PortfolioImg4
+                        },
+                        {
+                            label: "Project Console View (very meta)",
+                            image: PortfolioImg5
+                        },
+                        {
+                            label: "Resume Page",
+                            image: PortfolioImg6
+                        },
+                        {
+                            label: "Contact Page",
+                            image: PortfolioImg7
+                        },
+                    ],
+                    title: "Lunas",
+                    medium: "ReactJS Portfolio",
+                    description: "I included a place for this site in this portfolio, but I hope my work speaks for itself. The task of creating a website portfolio has been a daunting task and presented many obstacles along the way. On this side of the project, I feel a swelling sense of pride and accomplishment in what I've created here. Lunas now has a home and place for expression in the web world. I hope you enjoy my work, thank you for being here!",
+                    skills: ["ps", "ai", "html", "css", "js", "fm", "react", "git"],
+                    links: [
+                        {
+                            site: "git",
+                            text: "View My Site on GitHub",
+                            destination: "https://github.com/garrettruble1/portfolio-site"
+                        },
+                    ]
+                },
                 {
                     id: nanoid(),
                     cardImage: MindbitesCard,
