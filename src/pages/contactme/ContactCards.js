@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.css';
-import PhoneIcon from '../../imgs/phoneIcon.png';
 import EmailIcon from '../../imgs/emailIcon.png';
 import GitHubIconBlack from '../../imgs/githubIconBlack.png';
 import LinkedInIcon from '../../imgs/linkedin-in-brands.svg';
