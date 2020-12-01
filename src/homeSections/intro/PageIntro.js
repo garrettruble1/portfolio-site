@@ -9,9 +9,9 @@ function PageIntro() {
     const scaleX = useTransform(scrollYProgress, [0, 0.07], ['0', '120vw']);
     const scaleY = useTransform(scrollYProgress, [0, 0.07], ['0', '120vw']);
     const opacity = useTransform(scrollYProgress, [0.2, 0.25], [1, 0]);
-    const slideLeft = useTransform(scrollYProgress, [0.16, 0.22], ['5%', '-60%']);
+    const slideLeft = useTransform(scrollYProgress, [0.14, 0.22], ['4%', '-65%']);
     const opacity1 = useTransform(scrollYProgress, [0.05, 0.09], [0, 1]);
-    const opacity2 = useTransform(scrollYProgress, [0.08, 0.13], [0, 1]);
+    const opacity2 = useTransform(scrollYProgress, [0.07, 0.12], [0, 1]);
     return(
         <motion.div style={{ ...container, opacity: opacity }}>
             <span style={welcomeText}>Welcome to</span>
