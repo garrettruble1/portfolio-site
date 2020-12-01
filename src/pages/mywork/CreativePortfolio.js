@@ -63,7 +63,7 @@ const CreativePortfolio = [
         ],
         title: "Lunas",
         medium: "Branding Project",
-        description: "Lunas is my personal brand. It's the look, feel, logo, and word that I want to be able to stamp on all my work, no matter how eclectic and diverse the project or style may be. I wanted simple, elegent, and highly recognizable elements to use as my 'signature'. I love the symbology of moths and always found them fascinating, so I chose a moth as my main symbol. It's the most successful and comprehensive packet of branding elements I've created for myself so far, and I intend to continue adding to and modifying it, so it will continue to change and grow as I do.",
+        description: "Lunas is my personal brand. It's the look, feel, logo, and word that I want to be able to stamp on all my work, no matter how eclectic or diverse the project or style may be. I wanted simple, elegent, and highly recognizable elements to use as my 'signature'. I love the symbology of moths and always found them fascinating, so I chose a moth as my main symbol. It's the most successful and comprehensive packet of branding elements I've created for myself so far, and I intend to continue adding to and modifying it, so it will continue to change and grow as I do.",
         skills: ["ps", "ai", "ae"],
         links: []
     },
@@ -127,7 +127,7 @@ const CreativePortfolio = [
         ],
         title: "Ink Series",
         medium: "Ink Drawing Selections",
-        description: "These are a selection of ink drawings I have completed since 2018. I took a heavier interest in creating traditional ink pen drawings when challenged by a friend to completed Inktober 2018. While I did not complete all 30 drawings, I am very happy with the ones I did create. This selection is a mix of drawings intended for Inktober prompts, and other drawings I was simply inspired to create to further practice and experiment with inking.",
+        description: "These are selections of ink drawings I have completed since 2018. I took a heavier interest in creating traditional ink pen drawings when challenged by a friend to completed Inktober 2018. While I did not complete all 31 drawings, I am very happy with the ones I did create. This selection is a mix of drawings intended for Inktober prompts, and other drawings I was simply inspired to create to further practice and experiment with inking.",
         skills: ["pnc", "ink"],
         links: []
     },
@@ -192,7 +192,7 @@ const CreativePortfolio = [
         ],
         title: "Ramona Flowers",
         medium: "Digital Illustration",
-        description: "This is a stylized low-poly portrait of Ramona Flowers from the film Scott Pilgrim VS. The World. 'Low-poly' is short for low polygon count, a visual style intended to look like a rendered 3D model with fewer polygonal faces to make up the object. I create low-poly illustrations by importing my chosen reference into Photoshop, and tracing a transparent mesh guide of triangles over the image. Then I import both into Illustrator, trace and color layers of individual vector triangles to create an illusion of a low-poly 3D render. After the original portrait was done, I went back and created different colored iterations, and used After Effects to create the finished animation.",
+        description: "This is a stylized low-poly portrait of Ramona Flowers from the film Scott Pilgrim VS. The World. 'Low-poly' is short for low polygon count, a visual style intended to look like a rendered 3D model with fewer polygonal faces to make up the object. I create low-poly illustrations by importing my chosen reference into Photoshop, and tracing a transparent mesh guide of triangles over the image. Then I import both the image and mesh reference into Illustrator, and trace and color layers of individual vector triangles over the mesh to create an illusion of a low-poly 3D render. After the original portrait was done, I went back and created different colored iterations, and used After Effects to create the finished animation.",
         skills: ["ps", "ai", "ae"],
         links: [
             {
@@ -233,7 +233,7 @@ const CreativePortfolio = [
         ],
         title: "Perfume Series",
         medium: "Digital Minimalism Illustrations",
-        description: "These are a series of digital illustrations of the Japanese pop trio Perfume. I am heavily inspired by Perfume's music and performances (and by the girls themselves), and I seek to implement their quality of work and ethic in everything I do. There are elements of strong branding, elegance, simplicity throughout their work, and I wanted to mirror that by experimenting with a minimalistic style to see how much I could communicate visually using fewer shape elements. I designed these as wallpapers for a desktop size screen. Each piece represents a different look and feel based on its reference.",
+        description: "These are a series of digital illustrations of the Japanese pop trio Perfume. I am heavily inspired by Perfume's music and performances (and by the girls themselves), and I seek to infuse their quality of work and ethic into everything I do. There are elements of strong branding, elegance, simplicity throughout their work, and I wanted to mirror that by experimenting with a minimalistic style to see how much I could communicate visually using relatively fewer shape elements. I designed these as wallpapers for a desktop size screen. Each piece represents a different look and feel based on its reference.",
         skills: ["ps", "ai"],
         links: [
             {
