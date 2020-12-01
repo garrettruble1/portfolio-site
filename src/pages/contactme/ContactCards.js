@@ -11,8 +11,6 @@ function ContactCards(props) {
 
             <h3 className='cardHeader'>Other means of contact:</h3>
 
-            <div className='card'><span className='circleIcon'><img src={PhoneIcon} alt="Phone Icon" width='26px' /></span>(317) 498-7517</div>
-
             <a href='mailto:garrettruble1@gmail.com' className='card'><span className='squareIcon'><img src={EmailIcon} alt="Email Icon" width='26px' /></span>garrettruble1@gmail.com</a>
                         
             <a href='https://www.linkedin.com/in/garrettruble' target='_blank' rel='noopener noreferrer' className='card'><span className='squareIcon'><img src={LinkedInIcon} alt="LinkedIn Icon" width='26px' /></span>My LinkedIn</a>
