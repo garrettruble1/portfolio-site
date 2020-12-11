@@ -7,11 +7,11 @@
     height: auto;
     width: auto;
     background: url('./contactBackground.png') center center no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .welcome {
@@ -120,7 +120,6 @@
     width: 100%;
     min-height: 300px;
     padding: 20px;
-    border: 1px solid #101010;
     border-radius: 16px;
     outline: none;
     background-color: #AAABAE;
@@ -341,7 +340,7 @@
 
     .toggleButtonActive {
         background-color: #DDDFE2;
-        border: 1px solid #101010;
+        border: 1px solid #AAABAE;
     }
 
     .toggleButtonDisabled {
@@ -353,7 +352,6 @@
         grid-column-start: 1;
         grid-column-end: 9;
         margin: 0;
-        border: 1px solid #101010;
         border-radius: 32px;
     }
 

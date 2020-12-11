@@ -2,14 +2,16 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './Resume.css';
 import Header from '../../components/header/Header.js';
-import ResumeImage from '../../imgs/nov2020Resume.png';
+import ResumeImage1 from '../../imgs/RubleResume.png';
+import ResumeImage2 from '../../imgs/RubleResume2.png'
 import LinkedInIcon from '../../imgs/linkedin-in-brands.svg';
 
 class Resume extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            resume: 'resumeContainer'
+            resume1: 'resumeContainer1',
+            resume2: 'resumeContainer2'
         }
     }
 
@@ -18,7 +20,8 @@ class Resume extends React.Component {
 
         setTimeout(() => {
             this.setState({
-                resume: 'resumeContainer contentFadeIn'
+                resume1: 'resumeContainer1 contentFadeIn',
+                resume2: 'resumeContainer2 contentFadeIn'
             });
         }, 200)
     }
@@ -30,8 +33,11 @@ class Resume extends React.Component {
                 <div className='resumeBackground'></div>
 
                 <div className='content'>
-                    <div className={this.state.resume}>
-                        <img src={ResumeImage} alt="Resume" className='resume' />
+                    <div className={this.state.resume1}>
+                        <img src={ResumeImage1} alt="Resume" className='resume' />
+                    </div>
+                    <div className={this.state.resume2}>
+                        <img src={ResumeImage2} alt="Resume" className='resume' />
                     </div>
 
                     <div className='resumeButtonContainer'>
