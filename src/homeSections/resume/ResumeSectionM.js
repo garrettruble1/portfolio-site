@@ -8,9 +8,9 @@ import Arrow from '../../imgs/LunasArrowWhite.png';
 function ResumeSection() {
     const { scrollYProgress } = useViewportScroll();
     const clickability = useTransform(scrollYProgress, [0.51, 0.52, 0.67, 0.68], [0, 1, 1, 0]);
-    const slideY = useTransform(scrollYProgress, [0.48, 0.52, 0.66, 0.7], ['35%', '50%', '50%', '55%']);
+    const slideY = useTransform(scrollYProgress, [0.54, 0.56, 0.66, 0.7], ['35%', '50%', '50%', '55%']);
     const imgOpacity = useTransform(scrollYProgress, [0.48, 0.52, 0.66, 0.7], [0, 0.6, 0.6, 0]);
-    const opacity = useTransform(scrollYProgress, [0.48, 0.52, 0.66, 0.7], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.54, 0.56, 0.66, 0.7], [0, 1, 1, 0]);
 
     return(
         <motion.div className='sectionContainer' style={{ zIndex: clickability }}>

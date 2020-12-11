@@ -19,6 +19,8 @@ a {
   text-decoration: none;
 }
 
+/* === HOME PAGE PARALLAX STYLES === */
+
 .contentContainer {
   display: flex;
   flex-direction: column;

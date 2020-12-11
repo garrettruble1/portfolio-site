@@ -81,13 +81,13 @@ class MyWork extends React.Component {
                 <div className='content'>
 
                     <div className='portfolioToggle'>
-                        <button className={this.state.portfolioToggle ? 'portfolioToggleButton toggleButtonActive' : 'portfolioToggleButton toggleButtonDisabled'} 
+                        <button className={this.state.portfolioToggle ? 'portfolioToggleButton workToggleButtonActive' : 'portfolioToggleButton toggleButtonDisabled'} 
                             onClick={() => this.handleCodeToggle()}>
                                 <img src={CodeIcon} alt="Code Portfolio" className='toggleIcons' />
                                 <span className='toggleText'><img src={WhiteStar} alt="Decorative star" className='starDecor' />Code Portfolio<img src={WhiteStar} alt="Decorative star" className='starDecor' /></span>
                         </button>
 
-                        <button className={this.state.portfolioToggle ? 'portfolioToggleButton toggleButtonDisabled' : 'portfolioToggleButton toggleButtonActive'} 
+                        <button className={this.state.portfolioToggle ? 'portfolioToggleButton toggleButtonDisabled' : 'portfolioToggleButton workToggleButtonActive'} 
                             onClick={() => this.handleCreativeToggle()}>
                                 <img src={CreativeIcon} alt="Creative Portfolio" className='toggleIcons' />
                                 <span className='toggleText'><img src={WhiteStar} alt="Decorative star" className='starDecor' />Creative Portfolio<img src={WhiteStar} alt="Decorative star" className='starDecor' /></span>

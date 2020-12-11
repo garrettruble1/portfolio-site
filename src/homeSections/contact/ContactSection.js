@@ -8,9 +8,9 @@ import Arrow from '../../imgs/LunasArrowWhite.png';
 function ContactSection() {
     const { scrollYProgress } = useViewportScroll();
     const clickability = useTransform(scrollYProgress, [0.67, 0.68, 0.83, 0.84], [0, 1, 1, 0]);
-    const slideY = useTransform(scrollYProgress, [0.66, 0.7, 0.82, 0.86], ['35%', '40%', '40%', '40%']);
+    const slideY = useTransform(scrollYProgress, [0.72, 0.76, 0.82, 0.86], ['35%', '40%', '40%', '40%']);
     const imgOpacity = useTransform(scrollYProgress, [0.66, 0.7, 0.82, 0.9], [0, 0.6, 0.6, 0]);
-    const opacity = useTransform(scrollYProgress, [0.66, 0.7, 0.82, 0.9], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.72, 0.76, 0.82, 0.9], [0, 1, 1, 0]);
 
     return(
         <motion.div className='sectionContainer' style={{ zIndex: clickability }}>

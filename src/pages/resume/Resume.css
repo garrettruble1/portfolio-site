@@ -7,19 +7,30 @@
     height: auto;
     width: auto;
     background: url('./woodBackground.png') center center no-repeat;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.resumeContainer {
+.resumeContainer1 {
+    margin: 12px;
     opacity: 0;
-    grid-column-start: 4;
-    grid-column-end: 14;
-    height: 1120px;
-    border-radius: 60px;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    height: 760px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.resumeContainer2 {
+    margin: 12px;
+    opacity: 0;
+    grid-column-start: 9;
+    grid-column-end: 16;
+    height: 760px;
+    border-radius: 40px;
     overflow: hidden;
 }
 
@@ -101,10 +112,22 @@
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
 
-    .resumeContainer {
+    .resumeContainer1 {
+        margin: 12px;
+        opacity: 0;
         grid-column-start: 1;
         grid-column-end: 9;
-        height: 500px;
+        height: 480px;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    
+    .resumeContainer2 {
+        margin: 12px;
+        opacity: 0;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        height: 480px;
         border-radius: 40px;
         overflow: hidden;
     }
